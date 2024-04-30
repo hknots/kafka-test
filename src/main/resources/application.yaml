@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://idp.felleskomponent.no/nidp/oauth/nam
+  kafka:
+    consumer:
+      group-id: test-app
+
+fint:
+  application-id: test-app
+  kafka:
+    topic:
+    application-id: ${fint.application-id}
